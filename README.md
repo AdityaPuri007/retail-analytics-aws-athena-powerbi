@@ -1,83 +1,77 @@
-retail-analytics-aws-athena-powerbi/
+🛒 Retail Sales Analytics using AWS Athena & Power BI
+📌 Project Overview
+
+This project analyzes real-world e-commerce transactions using AWS Athena and visualizes insights in Power BI.
+The goal is to demonstrate cloud data querying, analytics, and visualization skills for business decision-making.
+
+🚀 Architecture
+
+Amazon S3 → Stored raw transactional dataset (OnlineRetail.csv).
+
+AWS Athena → Queried and transformed the data using SQL.
+
+Power BI → Created an interactive dashboard for business KPIs.
+
+GitHub → Documentation & portfolio showcase.
+
+📊 Key Business Questions Answered
+
+✔ Top 10 countries by sales volume
+✔ Monthly sales trends
+✔ Top 10 customers by revenue
+✔ Total revenue & Average Order Value (AOV)
+
+📂 Repository Structure
+├── queries/                 # Athena SQL queries
+│   ├── 01_top_countries.sql
+│   ├── 02_monthly_sales.sql
+│   ├── 03_top_customers.sql
+│   └── 04_revenue_aov.sql
 │
-├── data/
-│   └── sample_retail_500.csv    # optional small sample (or leave empty & link to Kaggle)
-├── queries/
-│   ├── create_table.sql
-│   ├── cleaned_view.sql
-│   ├── total_revenue.sql
-│   ├── top10_products.sql
-│   ├── revenue_by_country.sql
-│   ├── monthly_revenue.sql
-│   └── avg_order_value.sql
-├── results/
-│   ├── total_revenue.csv
-│   ├── top10_products.csv
-│   ├── revenue_by_country.csv
-│   └── monthly_revenue.csv
-├── dashboard/
-│   ├── retail_dashboard.pbix    # if <100MB
+├── results/                 # Athena query outputs (CSV/Excel)
+│   ├── top_countries.csv
+│   ├── monthly_sales.csv
+│   ├── top_customers.csv
+│   └── revenue_aov.csv
+│
+├── dashboard/               # BI Visuals
+│   ├── Retail_Dashboard.pbix
 │   └── dashboard_screenshot.png
-├── README.md
-└── LICENSE
+│
+└── README.md                # Project documentation
 
-# Retail Sales Analytics with AWS Athena & Power BI
-
-**Author:** Aditya Puri  
-**Project goal:** Build an end-to-end analytics workflow using AWS (S3 + Athena) to analyze retail transactions and present business insights via Power BI.
-
----
-
-## Architecture
-`S3 (raw CSV)` → `Amazon Athena (SQL queries)` → `Export CSV results` → `Power BI (dashboard)`.
-
----
-
-## Dataset
-- **Source:** [Online Retail Dataset (Kaggle / UCI)](https://www.kaggle.com/datasets/vijayuv/onlineretail)  
-- **Fields:** InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country  
-- **Note:** Full dataset is large; I included a small sample in `/data/`. Full dataset link above.
-
----
-
-## What I built
-- Cleaned data (filtered returns and null customers) using Athena view.
-- SQL queries to compute: total revenue, top 10 products, revenue by country, monthly revenue, and average order value.
-- A Power BI dashboard showing KPIs and visuals (bar, pie, line).
-
----
-
-## How to reproduce (quick)
-1. Upload `OnlineRetail.csv` to your S3 bucket (e.g., `s3://retail-analytics-aditya/`).
-2. Set Athena query result location (e.g., `s3://retail-analytics-aditya/athena-results/`).
-3. Run the SQL files in `/queries/` in Athena (run `create_table.sql`, then `cleaned_view.sql`, then each analysis query).
-4. Download results CSVs and import to Power BI. Build visuals or open `dashboard/retail_dashboard.pbix`.
-
----
-
-## Queries (sample)
-See `/queries/` for the exact SQL used. Key queries:
-- `top10_products.sql` — Top 10 products by revenue
-- `revenue_by_country.sql` — Revenue by country
-- `monthly_revenue.sql` — Monthly sales trend
-- `avg_order_value.sql` — Average order value per invoice
-
----
-
-## Insights (summary)
-- **Total revenue:** 9.75M  
-- **Average Order Value:** 376.36  
-- **Observation:** United Kingdom contributes ~84% of revenue; a small set of products drive a large share of sales.
----<img width="1918" height="1017" alt="Power BI Dashboard" src="https://github.com/user-attachments/assets/c128891b-7736-44f1-9a5e-311cb0225c8c" />
+📷 Dashboard Preview
+<img width="1918" height="1017" alt="Power BI Dashboard" src="https://github.com/user-attachments/assets/026f3396-a92a-4cbf-be68-0b191f1c0d63" />
 
 
-## Files included
-- `queries/` — Athena SQL files  
-- `results/` — CSV outputs from Athena  
-- `dashboard/` — Power BI file and screenshot
+🔑 Key Learnings
 
----
+How to query large datasets stored in Amazon S3 using Athena.
 
-## License
-MIT
+How to analyze real retail data to extract meaningful KPIs.
 
+Building Power BI dashboards from cloud query results.
+
+End-to-end workflow from raw data → insights → visualization.
+
+🛠️ Technologies Used
+
+Amazon S3
+
+AWS Athena (SQL)
+
+Power BI
+
+Excel (for intermediate analysis)
+
+📌 How to Reproduce
+
+Upload dataset to Amazon S3.
+
+Set up Athena query outputs in S3.
+
+Run SQL queries (provided in queries/).
+
+Export results to CSV/Excel.
+
+Import into Power BI and apply visuals.
