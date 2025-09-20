@@ -85,6 +85,11 @@ See `/queries/` for the exact SQL used. Key queries:
 - **Product Insights:** The top 10 products account for a significant portion of revenue, showing a strong “bestseller” effect   
 <img width="437" height="361" alt="Screenshot 2025-09-20 185854" src="https://github.com/user-attachments/assets/9b5b5a75-5404-40ed-ba80-f5ede04304ce" />
 
+### 📌 What this project demonstrates
+- Ability to design an **end-to-end analytics workflow** using cloud (AWS) + BI tools.  
+- Skills in **SQL-based data analysis, cleaning, and KPI generation**.  
+- Building a **business-ready dashboard** from raw data, turning it into actionable insights.  
+- Applicable for **real-world business use cases** as well as academic exploration in data analytics.
 
 ---
 
