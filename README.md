@@ -89,34 +89,18 @@ See `/queries/` for the exact SQL used. Key queries:
 🔑 Key Learnings
 
 How to query large datasets stored in Amazon S3 using Athena.
-
 How to analyze real retail data to extract meaningful KPIs.
-
 Building Power BI dashboards from cloud query results.
-
 End-to-end workflow from raw data → insights → visualization.
 
 🛠️ Technologies Used
 
-Amazon S3
+- Amazon S3
+- AWS Athena (SQL)
+- Power BI
+- Excel (for intermediate analysis)
 
-AWS Athena (SQL)
 
-Power BI
-
-Excel (for intermediate analysis)
-
-📌 How to Reproduce
-
-Upload dataset to Amazon S3.
-
-Set up Athena query outputs in S3.
-
-Run SQL queries (provided in queries/).
-
-Export results to CSV/Excel.
-
-Import into Power BI and apply visuals.
 
 ---
 
