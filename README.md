@@ -80,7 +80,9 @@ See `/queries/` for the exact SQL used. Key queries:
 ## Insights (summary)
 - **Total revenue:** 9.75M  
 - **Average Order Value:** 376.36  
-- **Observation:** United Kingdom contributes ~84% of revenue; a small set of products drive a large share of sales. (Use your chart insights here.)
+- **Observation:** United Kingdom contributes ~84% of revenue; a small set of products drive a large share of sales. 
+<img width="437" height="361" alt="Screenshot 2025-09-20 185854" src="https://github.com/user-attachments/assets/9b5b5a75-5404-40ed-ba80-f5ede04304ce" />
+
 
 ---
 
