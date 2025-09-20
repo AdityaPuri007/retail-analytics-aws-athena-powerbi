@@ -78,8 +78,8 @@ See `/queries/` for the exact SQL used. Key queries:
 ---
 
 ## Insights (summary)
-- **Total revenue:** _Replace with value from results (e.g., 9.75M)_  
-- **Average Order Value:** _Replace with value (e.g., 376.36)_  
+- **Total revenue:** 9.75M  
+- **Average Order Value:** 376.36  
 - **Observation:** United Kingdom contributes ~84% of revenue; a small set of products drive a large share of sales. (Use your chart insights here.)
 
 ---
