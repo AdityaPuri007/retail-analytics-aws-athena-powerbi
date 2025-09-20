@@ -78,9 +78,11 @@ See `/queries/` for the exact SQL used. Key queries:
 ---
 
 ## Insights (summary)
-- **Total revenue:** 9.75M  
-- **Average Order Value:** 376.36  
-- **Observation:** United Kingdom contributes ~84% of revenue; a small set of products drive a large share of sales. 
+- **Total Revenue:** ~£9.8M across all transactions  
+- **Average Order Value (AOV):** ~£377 per invoice  
+- **Top Country:** United Kingdom contributes ~84% of total revenue  
+- **Customer Behavior:** A small set of high-value customers drive a large share of sales  
+- **Product Insights:** The top 10 products account for a significant portion of revenue, showing a strong “bestseller” effect   
 <img width="437" height="361" alt="Screenshot 2025-09-20 185854" src="https://github.com/user-attachments/assets/9b5b5a75-5404-40ed-ba80-f5ede04304ce" />
 
 
@@ -99,6 +101,11 @@ End-to-end workflow from raw data → insights → visualization.
 - AWS Athena (SQL)
 - Power BI
 - Excel (for intermediate analysis)
+
+  ### 📌 What this shows
+- Businesses can identify their **key revenue drivers** (products/customers/countries).  
+- Seasonal and monthly trends are visible, helping with **demand forecasting**.  
+- Average order size provides a baseline to measure **customer value over time**. 
 
 
 
